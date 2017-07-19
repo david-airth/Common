@@ -1,0 +1,2 @@
+#This file determines what will run on app start
+databaseChangeLog: []

@@ -23,7 +23,7 @@ public abstract class AbstractEntity {
         return id;
     }
 
-    @Column
+    @Column(name = "updated_on")
     @UpdateTimestamp
     private Date updatedOn;
 
@@ -31,7 +31,7 @@ public abstract class AbstractEntity {
         return updatedOn;
     }
 
-    @Column
+    @Column(name = "created_on")
     @CreationTimestamp
     private Date createdOn;
 
@@ -39,6 +39,7 @@ public abstract class AbstractEntity {
         return createdOn;
     }
 
+    @Column(name = "created_by")
     @CreatedBy
     private String createdBy;
 
@@ -46,6 +47,7 @@ public abstract class AbstractEntity {
         return createdBy;
     }
 
+    @Column(name = "updated_by")
     @LastModifiedBy
     private String updatedBy;
 
